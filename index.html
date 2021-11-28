@@ -10,57 +10,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!--  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
   </head>
-  <body class="hero">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <header id="header">
-      <nav id="nav-bar">
-        <a href="#About" class="nav-link">About</a>
-        <a href="#Options" class="nav-link">Options</a>
-        <a href="#Howitworks" class="nav-link">How It Works</a>
-        <a href="#Pricing" class="nav-link">Pricing</a>
-      </nav>
+
+  <body>
+    <div class="wrap">
       <img
-        id="header-img"
-        src="https://p1.pxfuel.com/preview/852/1019/579/items-motorcycle-screw-nuts-seal-feather.jpg"
-        alt="scattered screws and bolts"
+        class="background"
+        src="https://images.unsplash.com/photo-1478680406226-0324e932642a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+        alt="background image"
       />
-      <figcaption>
-        <em
-          ><b>Homemade Climbing<br />Gear Company</b></em
-        >
-      </figcaption>
-    </header>
+      <div class="content">
+        <header id="header">
+           <img
+            id="header-img"
+            src="https://p1.pxfuel.com/preview/852/1019/579/items-motorcycle-screw-nuts-seal-feather.jpg"
+            alt="scattered screws and bolts"
+          />
 
-    <h2 id="About">About</h2>
-    <p>We are a small family-operated company</p>
+          <figcaption>
+            <em
+              ><b>Homemade Climbing<br />Gear Company</b></em
+            >
+          </figcaption>
+          
+          <nav id="nav-bar">
+            <a href="#About" class="nav-link">About</a>
+            <a href="#Options" class="nav-link">Options</a>
+            <a href="#Howitworks" class="nav-link">How It Works</a>
+            <a href="#Pricing" class="nav-link">Pricing</a>
+          </nav>
+         
+        </header>
 
-    <h2 id="Options">Design Options</h2>
-    <p id="streamlined">
-      <li>60's</li>
-      <li>70's</li>
-      <li>80's</li>
-    </p>
+        <div class="not-the-header">
+          <h2 id="About">About</h2>
+          <p>We are a small family-operated company</p>
 
-    <h2 id="Howitworks">How It Works</h2>
-    <div class="video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/KuUtjGeYcbU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-      </iframe>
+          <h2 id="Options">Design Options</h2>
+          <p id="streamlined">
+            <li>60's</li>
+            <li>70's</li>
+            <li>80's</li>
+          </p>
+
+          <h2 id="Howitworks">How It Works</h2>
+          <div class="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/KuUtjGeYcbU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            >
+            </iframe>
+          </div>
+
+          <h2 id="Pricing">Pricing</h2>
+          <p><b>On Demand</b></p>
+
+          <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <input
+              id="email"
+              type="email"
+              value="email"
+              name="email"
+              placeholder="Email"
+            />
+            <input type="submit" id="submit" />
+          </form>
+        </div>
+      </div>
     </div>
-
-    <h2 id="Pricing">Pricing</h2>
-    <p><b>On Demand</b></p>
-
-    <form id="form" action="https://www.freecodecamp.com/email-submit">
-      <input
-        id="email"
-        type="email"
-        value="email"
-        name="email"
-        placeholder="Email"
-      />
-      <input type="submit" id="submit" />
-    </form>
   </body>
 </html>
