@@ -1,88 +1,104 @@
-@media(max-width:1000px){
-    body{
-      width: 100%;
-    }
-    #video{
-      width: 40%;
-      height: 40%;
-    }
+@media (max-width: 800px) {
+  body {
+    width: 100%;
   }
-  
-  .hero{
-   text-align: center;   
+  iframe {
+    /*max-width: 40vw;
+    max-height: 30vh;*/
+    max-width: 280px;
+    min-width: 157px;
   }
-  
-  .hero::before{
-      content: "";
-      background-image: url('https://images.unsplash.com/photo-1478680406226-0324e932642a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
-       background-size: cover;
-        position: fixed;
-        top: 0vw;
-        right: 0vw;
-        bottom: 0vw;
-        left: 0vw;
-        opacity: 0.3;
-    
-  }
-  
-  #header-img{
-    height: 7vw;
-    position: fixed;
-    top: 0vw;
-    left: 0vw;
-  }
-  
-  figcaption{
-    position: fixed;
-    left: 10vw;
-    top: 1vw;
-    font-size: 2vw;
-  }
-  
-  #nav-bar{
-    position: fixed;
-    top: 0vw;
-    right: 0vw;
-    font-size: 2.5vw;
-  }
-  
-  .nav-link{
+}
+
+.wrap {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.background {
+  opacity: 0.3;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  position: relative;
+}
+
+header {
+  background-color: #00a087;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#header-img {
+  height: 7vw;
+  top: 0vw;
+  left: 0vw;
+}
+
+figcaption {
+  position: relative;
+  left: 0;
+  top: 1vw;
+  font-size: 2vw;
+}
+
+#nav-bar {
+  position: absolute;
+  right: 0;
+  top: 1vw;
+  padding: 1vh;
+  font-size: 2.5vw;
+}
+
+.nav-link {
   margin: 3vw;
   color: maroon;
   text-decoration: none;
-  }
-  
-  #About{
-    margin-top: 8vw;
-  }
-  
-  
-  #Options{
-    margin-bottom: 0vw;
-  }
-  
-  #streamlined{
-    display: flex;
-    flex-direction: column;
-    margin-top: 0vw;
-  }
-  
-  li{
-    font-size: 1.5vw;
-  }
-  
-  h2{
-    font-size: 2.25vw;
-  }
-  
-  p{
-    font-size: 1.5vw;
-  }
-  
-  #submit{
-    font-size: 2vw;
-  }
-  
-  #email {
-    font-size: 2vw;
-  }
+}
+
+.not-the-header {
+  padding-top: 5vw;
+}
+
+#About {
+  margin-top: 8vw;
+}
+
+#Options {
+  margin-bottom: 0vw;
+}
+
+#streamlined {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0vw;
+}
+
+li {
+  font-size: 1.5vw;
+}
+
+h2 {
+  font-size: 2.25vw;
+}
+
+p {
+  font-size: 1.5vw;
+}
+
+#submit {
+  font-size: 2vw;
+}
+
+#email {
+  font-size: 2vw;
+}
